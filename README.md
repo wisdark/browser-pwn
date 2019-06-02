@@ -36,7 +36,8 @@ The following is split into two parts:
 # Engines
 
 ## Engine-Overview
-* [Javascript Engine Fundamentals](https://mathiasbynens.be/notes/shapes-ics)
+* [Javascript Engine Fundamentals: the good, the bad, and the ugly](https://slidr.io/bmeurer/javascript-engine-fundamentals-the-good-the-bad-and-the-ugly)
+* [Javascript Engine Fundamentals: Shapes and Inline Caches](https://mathiasbynens.be/notes/shapes-ics)
 * [JavaScript Engines - how do they even (Video)](https://www.youtube.com/watch?v=p-iiEDtpy6I)
 
 ### Browse the Sources
@@ -174,6 +175,9 @@ The JavaScript-Engine of Webkit is JavaScriptCore (JSC).
 [Wiki](https://trac.webkit.org/wiki/JavaScriptCore) |
 [Source](https://github.com/WebKit/webkit/tree/master/Source/JavaScriptCore)
 
+Articles:
+*    http://www.filpizlo.com/papers.html
+
 ##### Source
 *    Runtime: [Source/JavaScriptCore/runtime](https://trac.webkit.org/browser/webkit/trunk/Source/JavaScriptCore/runtime)
 
@@ -246,12 +250,15 @@ $ out/Debug/ch
 *    Saelo: [Attacking JavaScript-Engines](http://www.phrack.org/papers/attacking_javascript_engines.html)
 *    [Awesome-Browser-Exploitation](https://github.com/Escapingbug/awesome-browser-exploit)
 *    [Attacking WebKit applications (Slides)](https://cansecwest.com/slides/2015/Liang_CanSecWest2015.pdf)
-*    Saelo Attacking Client-Side JIT Compilers - BlackHat 2018
+*    Saelo: Attacking Client-Side JIT Compilers - BlackHat 2018
      * [Video](https://youtu.be/emt1yf2Fg9g)
      * [Slides](https://saelo.github.io/presentations/blackhat_us_18_attacking_client_side_jit_compilers.pdf)
 *    j0nathanj: From Zero to ZeroDay (Finding a Chakra Zero Day)
      *    [Video](https://media.ccc.de/v/35c3-9657-from_zero_to_zero_day)
           [Slides](https://github.com/j0nathanj/Publications/tree/master/35C3_From_Zero_to_Zero_Day)
+*    Saelo: Fuzzili - (Guided-)fuzzing for JavaScript engines
+     * [Video](https://www.youtube.com/watch?v=OHjq9Y66yfc)
+     * [Slides](https://saelo.github.io/presentations/offensivecon_19_fuzzilli.pdf)
 
 
 
@@ -274,10 +281,23 @@ $ out/Debug/ch
      *  [Files+WriteUp](https://github.com/google/google-ctf/tree/master/2018/finals/pwn-just-in-time)
      *  [Slides](https://github.com/google/google-ctf/blob/master/2018/finals/solutions.pdf)
      *  [WriteUp](https://xz.aliyun.com/t/3348)
+* *CTF 2019: oob-v8
+     *  [Files](https://github.com/Changochen/CTF/raw/master/2019/*ctf/Chrome.tar.gz)
+     *  [WriteUp](https://changochen.github.io/2019-04-29-starctf-2019.html)
+     *  [WriteUp](https://github.com/vngkv123/aSiagaming/blob/master/Chrome-v8-oob/README.md)
+     *  [WriteUp](https://github.com/alstjr4192/BGazuaaaaa/blob/master/*CTF%202019%20oob/pwn.js)
                 
 ### RealWorld
 * [MobilePwn2Own 2013 - Chrome on Android](https://docs.google.com/document/d/1tHElG04AJR5OR2Ex-m_Jsmc8S5fAbRB3s4RmTG_PFnw/edit)
 * https://halbecaf.com/2017/05/24/exploiting-a-v8-oob-write/
+* niklasb: Chrome IPC Exploitation
+     * [Video](https://www.youtube.com/watch?v=MMxtKq8UgwE)
+     * [Slides](https://github.com/phoenhex/files/blob/master/slides/chrome_ipc_exploitation_offensivecon19.pdf)
+* [CVE-2019-5782 Write-Up](https://github.com/vngkv123/aSiagaming/tree/master/Chrome-v8-906043)
+* [CVE-2019-5790](https://labs.bluefrostsecurity.de/blog/2019/04/29/dont-follow-the-masses-bug-hunting-in-javascript-engines/)
+* saelo: Exploiting Logic Bugs in JavaScript JIT Engines
+     * [Phrack Article](http://phrack.org/papers/jit_exploitation.html)
+     * [41con 19' slides](https://saelo.github.io/presentations/41con_19_jit_exploitation_tricks.pdf)
 
 ### Hardening & Mitigations
 * [Heap-hardening](https://struct.github.io/oilpan_metadata.html)
@@ -343,6 +363,9 @@ $ out/Debug/ch
 * N1CTF 2018: Chakra
      * [Files](https://github.com/Nu1LCTF/n1ctf-2018/tree/master/challenges/pwn/Chakra)
 ### RealWorld
+* bkth: Attacking Edge Through the JavaScript-Compiler
+     * [Video](https://www.youtube.com/watch?v=r4J7Zu1RV40)
+     * [Slides](https://github.com/bkth/Attacking-Edge-Through-the-JavaScript-Compiler)
 
 # Tools
 
