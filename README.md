@@ -263,6 +263,13 @@ $ out/Debug/ch
 
 
 ## Chromium Pwn
+
+### Articles
+* [Exploiting TurboFan Through Bounds Check Elimination](https://gts3.org/2019/turbofan-BCE-exploit.html)
+* saelo: Exploiting Logic Bugs in JavaScript JIT Engines
+     * [Phrack Article](http://phrack.org/papers/jit_exploitation.html)
+     * [41con 19' slides](https://saelo.github.io/presentations/41con_19_jit_exploitation_tricks.pdf)
+
 ### CTF-Challenges
 * 34c3: v9
     *   [Sources](https://github.com/saelo/v9)
@@ -286,6 +293,9 @@ $ out/Debug/ch
      *  [WriteUp](https://changochen.github.io/2019-04-29-starctf-2019.html)
      *  [WriteUp](https://github.com/vngkv123/aSiagaming/blob/master/Chrome-v8-oob/README.md)
      *  [WriteUp](https://github.com/alstjr4192/BGazuaaaaa/blob/master/*CTF%202019%20oob/pwn.js)
+* RealWorldCTF Quals 2019: accessible
+     * [Files](https://github.com/m1ghtym0/write-ups/tree/master/browser/realworldctf-quals-2019-accessible)
+     * [WriteUp](https://mem2019.github.io/jekyll/update/2019/09/16/Real-World-2019-Accessible.html)
                 
 ### RealWorld
 * [MobilePwn2Own 2013 - Chrome on Android](https://docs.google.com/document/d/1tHElG04AJR5OR2Ex-m_Jsmc8S5fAbRB3s4RmTG_PFnw/edit)
@@ -295,9 +305,8 @@ $ out/Debug/ch
      * [Slides](https://github.com/phoenhex/files/blob/master/slides/chrome_ipc_exploitation_offensivecon19.pdf)
 * [CVE-2019-5782 Write-Up](https://github.com/vngkv123/aSiagaming/tree/master/Chrome-v8-906043)
 * [CVE-2019-5790](https://labs.bluefrostsecurity.de/blog/2019/04/29/dont-follow-the-masses-bug-hunting-in-javascript-engines/)
-* saelo: Exploiting Logic Bugs in JavaScript JIT Engines
-     * [Phrack Article](http://phrack.org/papers/jit_exploitation.html)
-     * [41con 19' slides](https://saelo.github.io/presentations/41con_19_jit_exploitation_tricks.pdf)
+* [CVE-2019-5786 Chrome Remote Code Execution Vulnerability Analysis](https://www.weibo.com/ttarticle/p/show?id=2309404351596157885398)
+
 
 ### Hardening & Mitigations
 * [Heap-hardening](https://struct.github.io/oilpan_metadata.html)
@@ -309,6 +318,7 @@ $ out/Debug/ch
 
 * [Playing around with SpiderMonkey](https://vigneshsrao.github.io/play-with-spidermonkey/)
 * [OR'LYEH? The Shadow over Firefox](http://www.phrack.org/issues/69/14.html)
+* [A journey into IonMonkey: root-causing CVE-2019-9810](https://doar-e.github.io/blog/2019/06/17/a-journey-into-ionmonkey-root-causing-cve-2019-9810/)
 
 ### CTF-Challenges
 * 33c3: Feuerfuchs
@@ -324,12 +334,20 @@ $ out/Debug/ch
 * 35c3 FunFox
     *   [Sources](https://github.com/bkth/35c3ctf/tree/master/funfox) 
 ### RealWorld
+* Introduction to SpiderMonkey exploitation
+    * [Article](https://doar-e.github.io/blog/2018/11/19/introduction-to-spidermonkey-exploitation/)
 * Use-after-free in Spidermonkey (Beta 53)
-     * [Article](https://phoenhex.re/2017-06-21/firefox-structuredclone-refleak#turning-a-use-after-free-into-a-readwrite-primitive)
-     * [Talk](https://www.youtube.com/watch?v=D_9EFWYnBik)
-     * [Slides](https://grehack.fr/data/2017/slides/GreHack17_Get_the_Spidermonkey_off_your_back.pdf)
+    * [Article](https://phoenhex.re/2017-06-21/firefox-structuredclone-refleak#turning-a-use-after-free-into-a-readwrite-primitive)
+    * [Talk](https://www.youtube.com/watch?v=D_9EFWYnBik)
+    * [Slides](https://grehack.fr/data/2017/slides/GreHack17_Get_the_Spidermonkey_off_your_back.pdf)
 * https://saelo.github.io/posts/firefox-script-loader-overflow.html
-
+* Use-after-free in SpiderMonkey (64.0a1)
+    * [Article](https://www.zerodayinitiative.com/blog/2019/7/1/the-left-branch-less-travelled-a-story-of-a-mozilla-firefox-use-after-free-vulnerability)
+* CVE-2019-11707 Type Confusion
+    * [WriteUp](https://blog.bi0s.in/2019/08/18/Pwn/Browser-Exploitation/cve-2019-11707-writeup/)
+    * [Report](https://bugs.chromium.org/p/project-zero/issues/detail?id=1820)
+* CVE-2019-11708 & CVE-2019-9810
+    * [WriteUp](https://github.com/0vercl0k/CVE-2019-11708)
 
 
 ## Safari Pwn
@@ -356,16 +374,28 @@ $ out/Debug/ch
 
 
 
-## Edge Pwn
+## Edge 
+
+### Articles
+
+* bkth: [Tale of Chakra Bugs](https://github.com/bkth/Tale-Of-Chakra-Bugs)
+* bkth: Attacking Edge Through the JavaScript-Compiler
+     * [Video](https://www.youtube.com/watch?v=r4J7Zu1RV40)
+     * [Slides](https://github.com/bkth/Attacking-Edge-Through-the-JavaScript-Compiler)
+
 ### CTF-Challenges
 * Plaid 2017: chakrazy
     * [WriteUp](https://bruce30262.github.io/Chakrazy-exploiting-type-confusion-bug-in-ChakraCore/)
 * N1CTF 2018: Chakra
      * [Files](https://github.com/Nu1LCTF/n1ctf-2018/tree/master/challenges/pwn/Chakra)
+* RealWorldCTF Quals 2019: Appetizer
+     * [Files](https://github.com/m1ghtym0/write-ups/tree/master/browser/realworldctf-quals-2019-appetizer)
+* Trend Micro CTF 2019: ChakraCore 400
+     * [WriteUp](https://theromanxpl0it.github.io/articles/2019/09/09/Trend-Micro-CTF-ChakraCore-JIT-exploitation.html)
+     * [WriteUp](https://balsn.tw/ctf_writeup/20190906-trendmicroctfqual/#400)
+     * [Exploit](https://gist.github.com/itszn/3277e8aa56c91f8296d88d25d96df717)
 ### RealWorld
-* bkth: Attacking Edge Through the JavaScript-Compiler
-     * [Video](https://www.youtube.com/watch?v=r4J7Zu1RV40)
-     * [Slides](https://github.com/bkth/Attacking-Edge-Through-the-JavaScript-Compiler)
+* bkth, S0rryMyBad: [Non JIT Bug, JIT Exploit](https://phoenhex.re/2019-05-15/non-jit-bug-jit-exploit)
 
 # Tools
 
